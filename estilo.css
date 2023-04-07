@@ -1,14 +1,38 @@
+body{
+    background-color: black; 
+    color:#cfcdc8;
+    font-family: 'Khula',Arial,sans-serif;
+}
+
 h1{
     color: #e84a4a;
-    font-size: 70px;
-    padding-top: 40px;
+    font-size: 6vw;
+    padding-top: 4vw;
+    font-family: 'Manrope',Arial,sans-serif;
 }
-body{
-    background-color: #e6e5df;
-}
+
 #fiesta1{
-    margin: 20px 300px;
+    margin: 1vw 27vw;
 }
 #logo{
     float:left;
+}
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    text-align: center;
+    position: sticky;
+}
+nav{
+    margin-left: 16vw;
+}
+h2{
+    padding: 2vw;
+    text-align:center;
 }
