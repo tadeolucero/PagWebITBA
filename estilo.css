@@ -33,6 +33,10 @@ nav{
     margin-left: 16vw;
 }
 h2{
-    padding: 2vw;
+    
     text-align:center;
+}
+
+.pie{
+    background-color: #0d121a;
 }
