@@ -10,13 +10,30 @@ h1{
     padding-top: 4vw;
     font-family: 'Manrope',Arial,sans-serif;
 }
+.flex-container{
+    display: flex;
+}
+.flex-container > div{
+    align-self: center;
+}
+@media screen and (max-width: 500px){
+    body{
+    background-color: #cfcdc8;
+    color: black;
+    }
+    footer{
+        color: #cfcdc8
+    }
+
+
+} 
 
 #fiesta1{
-    margin: 1vw 27vw;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
 }
-#logo{
-    float:left;
-}
+
 nav li{
     float: left;
 }
@@ -38,5 +55,7 @@ h2{
 }
 
 .pie{
+    display: flex;
     background-color: #0d121a;
 }
+
