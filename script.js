@@ -1,0 +1,1 @@
+window.alert("Para este sitio debes ser mayor de edad. Si das 'click' al boton de aceptar estas indicando que lo eres. Caso contrario este no es un sitio para ti. Regresa cuando cumplas 18!")
