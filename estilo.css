@@ -24,14 +24,34 @@ h1{
     footer{
         color: #cfcdc8
     }
-
-
+    #fiesta1{
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    nav li{
+        display: flex;
+    }
+    nav li a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 1vw 2vw;
+        text-align: center;
+    }
 } 
 
 #fiesta1{
-    display: flex;
-    margin-left: 30%;
-    margin-right: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 nav li{
@@ -52,7 +72,17 @@ nav{
 h2{
     text-align:center;
 }
-
+.album{
+    display: flex;
+    flex-wrap: wrap;
+}
+.album > div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
 .pie{
     display: flex;
     background-color: #0d121a;
