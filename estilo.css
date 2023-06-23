@@ -65,6 +65,7 @@ nav{
 }
 h2{
     text-align:center;
+    font-size: 2.5vw;
 }
 .album{
     display: flex;
@@ -76,8 +77,31 @@ h2{
     margin-right: auto;
     max-width: 100%;
     height: auto;
+    transition: transform 0.3s;
+    position: relative;
+}
+.precioIndividual{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1vw;
 }
 .pie{
     display: flex;
     background-color: #0d121a;
+}
+.chango{
+    width: 5vw;
+}
+div.sticky{
+    text-align: center;
+    position:fixed;
+    background: grey;
+    z-index: 2;
+    transform: translateX(90vw);
 }
