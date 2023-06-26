@@ -1,0 +1,62 @@
+[
+    {
+      "precio": 2300,
+      "id": 1,
+      "title": "Andes Ipa"
+    },
+    {
+      "precio": 2300,
+      "id": 2,
+      "title": "Andes Roja"
+    },
+    {
+      "precio": 2300,
+      "id": 3,
+      "title": "Andes Rubia"
+    },
+    {
+      "precio": 1900,
+      "id": 4,
+      "title": "Imperial Negra"
+    },
+    {
+      "precio": 1900,
+      "id": 5,
+      "title": "Imperial Rubia"
+    },
+    {
+      "precio": 1850,
+      "id": 6,
+      "title": "Quilmes"
+    },
+    {
+      "precio": 2480,
+      "id": 7,
+      "title": "Patagonia Ipa"
+    },
+    {
+      "precio": 2480,
+      "id": 8,
+      "title": "Amber Lager"
+    },
+    {
+      "precio": 2480,
+      "id": 9,
+      "title": "Bohemian Pilsener"
+    },
+    {
+      "precio": 2600,
+      "id": 10,
+      "title": "Stella Artois"
+    },
+    {
+      "precio": 3950,
+      "id": 11,
+      "title": "Fernet"
+    },
+    {
+      "precio": 700,
+      "id": 12,
+      "title": "Coca Cola"
+    }
+]

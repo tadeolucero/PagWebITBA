@@ -7,6 +7,38 @@ function agrandar(element) {
 function achicar(element) {
     element.parentElement.style.transform = 'scale(1)';
 }
-let totalStr = document.getElementsByClassName('total')[0].innerHTML
-let precioFinal=parseInt(totalStr)
 
+const productosContainer = document.getElementById('productos');
+const vaciarCarritoBtn = document.createElement('button');
+vaciarCarritoBtn.innerText = 'Vaciar Carrito';
+
+const carrito = [];
+
+function agregarAlCarrito(precio) {
+  carrito.push(precio);
+  actualizarTotal();
+}
+
+function vaciarCarrito() {
+  carrito.length = 0;
+  actualizarTotal();
+}
+
+function actualizarTotal() {
+  const totalElement = document.querySelector('.total');
+  totalElement.innerText = carrito.reduce((total, precio) => total + precio, 0);
+}
+
+const addToCartBtns = document.querySelectorAll('.addToCartBtn');
+addToCartBtns.forEach(btn => {
+  const price = parseInt(btn.dataset.price);
+  btn.addEventListener('click', () => {
+    agregarAlCarrito(price);
+  });
+});
+
+vaciarCarritoBtn.addEventListener('click', () => {
+  vaciarCarrito();
+});
+
+productosContainer.appendChild(vaciarCarritoBtn);

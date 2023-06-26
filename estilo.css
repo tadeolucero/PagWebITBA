@@ -130,3 +130,7 @@ h2{
     font-size: 2vw;
     text-align: center;
   }
+.producto{
+    display: flexbox;
+    flex-direction: column;
+}
