@@ -16,7 +16,7 @@ h1{
 .flex-container > div{
     align-self: center;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 750px){
 
     #fiesta1{
         display: flex;
@@ -24,21 +24,11 @@ h1{
         margin-right: 10%;
         max-width: 100%;
     }
-    nav{
+    #encabezado{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
-    nav li{
-        display: flex;
-    }
-    nav li a{
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 1vw 2vw;
-        text-align: center;
-    }
-} 
+}
 
 #fiesta1{
     display: block;
@@ -47,9 +37,23 @@ h1{
     max-width: 100%;
     height: auto;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#encabezado{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 nav li{
-    float: left;
+    display:inline-block;
+    margin-right: 10px;
 }
 
 nav li a{
@@ -58,14 +62,15 @@ nav li a{
     text-decoration: none;
     padding: 1vw 2vw;
     text-align: center;
-    position: sticky;
 }
-nav{
-    margin-left: 16vw;
+
+nav li a:hover, nav li a.active {
+  background-color: #333;
 }
+
 h2{
     text-align:center;
-    font-size: 2.5vw;
+    font-size: 190%;
 }
 .album{
     display: flex;
@@ -86,7 +91,7 @@ h2{
     left: 10%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1vw;
+    font-size: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1vw;
@@ -95,13 +100,33 @@ h2{
     display: flex;
     background-color: #0d121a;
 }
+.pie > div > p{
+    margin:1%
+}
 .chango{
     width: 5vw;
 }
-div.sticky{
+.sticky{
     text-align: center;
     position:fixed;
-    background: grey;
+    background: #5c5a5a;
     z-index: 2;
     transform: translateX(90vw);
+
 }
+.chango {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+.chango svg{
+    width: 4vw;
+    height: 3vw;
+}
+
+  .total {
+    font-size: 2vw;
+    text-align: center;
+  }
