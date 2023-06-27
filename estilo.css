@@ -16,19 +16,7 @@ h1{
 .flex-container > div{
     align-self: center;
 }
-@media screen and (max-width: 750px){
 
-    #fiesta1{
-        display: flex;
-        margin-left: 10%;
-        margin-right: 10%;
-        max-width: 100%;
-    }
-    #encabezado{
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 #fiesta1{
     display: block;
@@ -197,4 +185,24 @@ form{
     color: whitesmoke;
     text-align: center;
     border: none;
+}
+@media screen and (max-width: 800px){
+    #fiesta1{
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 100%;
+    }
+    #encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+    .album > .producto > div > img{
+        max-width: 250px;
+        max-height: 250px;
+        margin-bottom: 1px;
+    }
+    .addToCartBtn{
+        top: 80%;
+    }
 }
