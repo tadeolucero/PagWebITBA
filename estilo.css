@@ -191,7 +191,7 @@ form{
         display: flex;
         margin-left: 10%;
         margin-right: 10%;
-        max-width: 100%;
+        max-width: 80%;
     }
     #encabezado{
         display: flex;
