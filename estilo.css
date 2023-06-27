@@ -96,6 +96,7 @@ h2{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1vw;
 }
+
 .pie{
     display: flex;
     background-color: #0d121a;
@@ -107,30 +108,93 @@ h2{
     width: 5vw;
 }
 .sticky{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     position:fixed;
-    background: #5c5a5a;
+    top: 0.5%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
-    transform: translateX(90vw);
-
+}
+.sticky > div{
+    flex: 1 1 auto;
+    margin: 1%;
 }
 .chango {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 0.5rem;
   }
   
 .chango svg{
-    width: 4vw;
-    height: 3vw;
+    width: 30%;
+    height: 20%;
 }
 
-  .total {
-    font-size: 2vw;
+.total {
+    font-size: 100%;
     text-align: center;
-  }
+}
+.finalizarCompraBtn{
+    background-color: #414040;
+    font-size: 100%;
+    padding: 0.7vw;
+    color: whitesmoke;
+    text-align: center;
+    border: none;
+}
+#vaciarCarritoBtn{
+    background-color: #414040;
+    font-size: 100%;
+    color: whitesmoke;
+    border: none;
+
+}
+
 .producto{
     display: flexbox;
     flex-direction: column;
+}
+.addToCartBtn{
+    background-color: #414040;
+    font-size:100%;
+    padding: 0.7vw;
+    color: whitesmoke;
+    margin: 10px;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    text-align: center;
+}
+.addToCartBtn:hover{
+    background-color: #cfcdc8;
+    border: 2px solid black;
+    color: #414040;
+}
+.volverInicioBtn{
+    background-color: #414040;
+    font-size: 100%;
+    color: whitesmoke;
+    text-align: center;
+    border: none;
+    margin: 10px
+}
+.volverInicioBtn:hover{
+    color: #e84a4a;
+}
+form{
+    text-align: center;
+}
+
+.enviar{
+    background-color: #414040;
+    font-size: 100%;
+    padding: 0.7vw;
+    color: whitesmoke;
+    text-align: center;
+    border: none;
 }

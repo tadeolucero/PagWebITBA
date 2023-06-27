@@ -1,5 +1,3 @@
-window.alert("Para este sitio debes ser mayor de edad. Si das 'click' al boton de aceptar estas indicando que lo eres. Caso contrario este no es un sitio para ti. Regresa cuando cumplas 18!")
-// Hacerlo para que aparezca solo cuando quiere conffirmar la compra
 function agrandar(element) {
     element.parentElement.style.transform = 'scale(1.02)';
 }
@@ -9,8 +7,7 @@ function achicar(element) {
 }
 
 const productosContainer = document.getElementById('productos');
-const vaciarCarritoBtn = document.createElement('button');
-vaciarCarritoBtn.innerText = 'Vaciar Carrito';
+const vaciarCarritoBtn = document.getElementById('vaciarCarritoBtn');
 
 const carrito = [];
 
@@ -41,4 +38,17 @@ vaciarCarritoBtn.addEventListener('click', () => {
   vaciarCarrito();
 });
 
-productosContainer.appendChild(vaciarCarritoBtn);
+const carritoContainer = document.getElementById('carrito');
+carritoContainer.appendChild(vaciarCarritoBtn);
+
+const finalizar=document.getElementById('pedidoCompletoBtn')
+finalizar.addEventListener('click', function() {
+  if((carrito!=0)){
+    if(window.confirm('Al hacer click en "aceptar" estas confirmando que eres mayor de edad y que quieres confirmar la compra')){
+      window.location.href= 'cuestionario.html';
+    }
+    }
+    else{
+      window.alert('El carrito esta vacio')
+    }
+});

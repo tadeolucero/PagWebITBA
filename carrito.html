@@ -13,29 +13,36 @@
           <div style="order: 2" id="titulo"><h1>Bebidas Manolo</h1></div>
         </div>
     </header>
+    <h2>Nuestro Catálogo</h2>     
     <div>
-      <h2>Nuestro Catálogo</h2>
-      <div class="sticky">
+      <a href="./index.html">
+        <button class="volverInicioBtn">Volver a Inicio</button>
+      </a>
+    </div>
+    <div>
+      <div class="sticky" width="auto" >
         <div class="chango"> <svg xmlns="http://www.w3.org/2000/svg" width="3vw" height="4vw" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
         <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
         </svg></div>
         <p class="total" width="3vw" >0</p>
+        <div id="carrito">
+          <button id="vaciarCarritoBtn">Vaciar Carrito</button>
+        </div>
+        <div>
+          <button  class="finalizarCompraBtn" id="pedidoCompletoBtn"> Finalizar compra</button>
+        </div>
       </div>
     </div>
     <br>
     <br>
     <main>
-    <div>
-        <a href="./index.html">
-          <button>Volver a Inicio</button>
-        </a>
-    </div>
+
     <br>
     <br>
     <div id="productos" class="album">
       <div class="producto">
-        <div style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/andes ipa.jpg" width="400" height="400" alt=""> 
+        <div style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img  src="./imagenes/andes ipa.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$2300</div> 
         </div>
         <div style="order: 2">
@@ -44,8 +51,8 @@
       </div>
 
       <div class="producto">
-        <div style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/andes roja.png" width="400" height="400" alt=""> 
+        <div style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img  src="./imagenes/andes roja.png" width="400" height="400" alt=""> 
           <div class="precioIndividual">$2300</div>
         </div>
         <div style="order: 2">
@@ -54,8 +61,8 @@
       </div>
 
       <div class="producto">
-        <div style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/andes rubia.jpg" width="400" height="400" alt=""> 
+        <div style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)" >
+          <img src="./imagenes/andes rubia.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$2300</div> 
         </div>
         <div style="order: 2">
@@ -64,8 +71,8 @@
       </div>
 
       <div class="producto">
-        <div style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/imperial negra.jpg" width="400" height="400" alt=""> 
+        <div style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img src="./imagenes/imperial negra.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$1900</div> 
         </div>
         <div style="order: 2">
@@ -74,8 +81,8 @@
       </div>
 
       <div class="producto">
-        <div style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/imperial rubia.jpg" width="400" height="400" alt=""> 
+        <div style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)" >
+          <img src="./imagenes/imperial rubia.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$1900</div> 
         </div>
         <div style="order: 2">
@@ -84,8 +91,8 @@
       </div>
 
       <div class="producto">
-        <div style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/quilmes rubia.jpg" width="400" height="400" alt=""> 
+        <div style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img src="./imagenes/quilmes rubia.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$1850</div>
         </div>
         <div style="order: 2">
@@ -94,8 +101,8 @@
       </div>
 
       <div class="producto">
-        <div style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/patagonia 24 7.jpg" width="400" height="400" alt=""> 
+        <div style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)" >
+          <img src="./imagenes/patagonia 24 7.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$2480</div> 
         </div>
         <div style="order: 2">
@@ -104,8 +111,8 @@
       </div>
 
       <div class="producto">
-        <div  style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/patagonia amber lager.jpg" width="400" height="400" alt=""> 
+        <div  style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img src="./imagenes/patagonia amber lager.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$2480</div>
         </div>
         <div  style="order: 2">
@@ -114,8 +121,8 @@
       </div>
 
       <div class="producto">
-        <div  style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/patagonia bohemian.jpg" width="400" height="400" alt=""> 
+        <div  style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img src="./imagenes/patagonia bohemian.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$2480</div>
         </div>
         <div  style="order: 2">
@@ -124,8 +131,8 @@
       </div>
 
       <div class="producto">
-        <div  style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/stella artois.jpg" width="400" height="400" alt=""> 
+        <div  style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img src="./imagenes/stella artois.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$2600</div> 
         </div>
         <div  style="order: 2">
@@ -134,8 +141,8 @@
       </div>
 
       <div class="producto">
-        <div  style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/fernet.jpeg" width="400" height="400" alt=""> 
+        <div  style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img src="./imagenes/fernet.jpeg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$3950</div> 
         </div>
         <div  style="order: 2">
@@ -144,8 +151,8 @@
       </div>
 
       <div class="producto">
-        <div  style="order: 1">
-          <img onmouseover="agrandar(this)" onmouseout="achicar(this)" src="./imagenes/ccoca.jpg" width="400" height="400" alt=""> 
+        <div  style="order: 1" onmouseover="agrandar(this)" onmouseout="achicar(this)">
+          <img src="./imagenes/ccoca.jpg" width="400" height="400" alt=""> 
           <div class="precioIndividual">$700</div> 
         </div>
         <div  style="order: 2">
@@ -153,12 +160,7 @@
         </div>
       </div>
     </div>
-<br>
-<br>
-    <div>
-      <button id="vaciarCarritoBtn">Vaciar Carrito</button>
-    </div>
-
+    <br>
     </main>
 
     <footer class="pie">
